@@ -106,6 +106,7 @@ export default {
           title: 'Home',
           to: '/',
         },
+        /*
         {
           icon: 'mdi-account',
           title: 'About',
@@ -160,6 +161,22 @@ export default {
           icon: 'mdi-blogger',
           title: 'Blog',
           to: '/blog',
+        },
+        */
+        {
+          icon: 'mdi-folder-image',
+          title: 'Portfolio',
+          to: '/Portfolio',
+        },
+        {
+          icon: 'mdi-folder-image',
+          title: 'Bridal',
+          to: '/bridal',
+        },
+        {
+          icon: 'mdi-folder-image',
+          title: 'Creative',
+          to: '/creative',
         },
         {
           icon: 'mdi-contacts',
