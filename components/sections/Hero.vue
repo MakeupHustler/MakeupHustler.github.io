@@ -20,7 +20,10 @@
               {{ carousel.heading.toUpperCase() }}
             </div>
             <p class="mb-5">{{ carousel.subHeading }}</p>
-            <v-btn :x-large="$vuetify.breakpoint.smAndUp" class="my-3 primary"
+            <v-btn
+              :x-large="$vuetify.breakpoint.smAndUp"
+              class="my-3 primary"
+              href="/contact"
               >Get Started</v-btn
             >
             <span class="mx-2 my-4"></span>
@@ -29,6 +32,7 @@
               text
               class="my-3"
               outlined
+              :href="carousel.href"
               ><v-icon left large color="primary">mdi-play</v-icon>Learn
               More</v-btn
             >
@@ -45,28 +49,29 @@ export default {
     return {
       carouselsData: [
         {
-          src: 'pexels-andrea-piacquadio-3884440.jpg',
-          heading: ' PROMOTE YOUR BUSINESS WITH US ',
-          subHeading:
-            'Infographic hypotheses influencer user experience Long madel ture gen-z paradigm shift client partner network product seilans solve management influencer analytics leverage virality. incubator seed round massmarket. buyer agile development growth hacking business-to-consumer ecosystem ',
+          src: '/bridal/bridal-050-crop.jpg',
+          heading: ' MAKEUP HUSTLER SA',
+          subHeading: '@makeuphustersa',
+          href: '/contact',
         },
         {
-          src: 'pexels-peter-olexa-4012966.jpg',
-          heading: ' LOREM IPSUM DOLOR SIT AMET CONSEETU',
+          src: '/creative/creative-014-crop.jpg',
+          heading: ' BRIDAL ',
           subHeading:
-            'Litora a interdum primis. Lectus facilisi sit cum arcu aliquam velit imperdiet sapien suspendisse at vel facilisis. Facilisis metus, curae; nibh mi orci et. Fringilla sociis magna rutrum bibendum arcu.',
+            'Designs that lead to beautiful photos for your special day',
+          href: '/bridal',
         },
         {
-          src: 'pexels-thirdman-5961072.jpg',
-          heading: ' Build your website with this Theme ',
-          subHeading:
-            'Tellus cum turpis natoque id justo interdum tincidunt faucibus aptent congue pellentesque. Proin luctus orci netus! Scelerisque parturient cursus donec parturient et, luctus aptent habitant aliquet felis. Sapien placerat ultricies.',
+          src: '/creative/creative-050-crop.jpg',
+          heading: ' CREATIVE ',
+          subHeading: 'Uniquely inspired looks for every occassion',
+          href: '/creative',
         },
         {
-          src: 'pexels-andrea-piacquadio-3830745.jpg',
-          heading: ' URNA TINCIDUNT MATTIS TORTOR ',
-          subHeading:
-            'Dapibus cras, ligula suspendisse potenti himenaeos mus volutpat pulvinar est facilisi. Vehicula malesuada parturient euismod litora mollis penatibus. Penatibus cum nullam facilisi enim nisi ac suspendisse. Ullamcorper ad amet netus.',
+          src: '/creative/creative-009-crop.jpg',
+          heading: ' CUSTOM ',
+          subHeading: 'Delivering just the right look for your needs.',
+          href: '/creative',
         },
       ],
     }
@@ -74,13 +79,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .gradient-fill .v-responsive__content {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     to right,
-    rgba(3, 12, 41, 0.75),
-    rgba(5, 11, 31, 0.65)
+    rgba(78, 78, 78, 0.25),
+    rgba(78, 78, 78, 0.35)
   );
 }
 </style>

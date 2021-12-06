@@ -35,7 +35,7 @@
 
     <v-app-bar fixed app hide-on-scroll height="64" elevate-on-scroll>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true" />
-      <nuxt-link to="/" class="d-flex">
+      <nuxt-link to="/" class="d-flex no-text-underline">
         <Logo />
       </nuxt-link>
       <v-spacer />
@@ -162,12 +162,12 @@ export default {
           title: 'Blog',
           to: '/blog',
         },
-        */
         {
           icon: 'mdi-folder-image',
           title: 'Portfolio',
           to: '/Portfolio',
         },
+        */
         {
           icon: 'mdi-folder-image',
           title: 'Bridal',
@@ -201,5 +201,12 @@ export default {
 <style scoped>
 .submenubtn {
   cursor: default;
+}
+.no-text-underline {
+  text-decoration: none;
+  font-size: 1.75rem !important;
+  line-height: 3.75rem;
+  letter-spacing: -0.0083333333em !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 </style>

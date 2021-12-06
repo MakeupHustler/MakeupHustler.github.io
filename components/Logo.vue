@@ -1,4 +1,6 @@
 <template>
+  <div id="logo">Makeup Hustler</div>
+  <!--
   <svg
     width="151"
     height="55"
@@ -23,6 +25,7 @@
       :class="$vuetify.theme.dark ? 'fill-light-color' : 'fill-dark-color'"
     />
   </svg>
+  -->
 </template>
 
 <style scoped>
@@ -34,5 +37,11 @@
 }
 .fill-dark-color {
   fill: #000;
+}
+#logo {
+  color: black;
+}
+a {
+  text-decoration: none;
 }
 </style>

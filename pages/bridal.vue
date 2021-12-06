@@ -6,14 +6,14 @@
         <v-container class="py-16">
           <v-row>
             <v-col
-              v-for="n in 120"
+              v-for="n in 52"
               :key="n"
               class="d-flex child-flex"
               cols="4"
               xl="3"
             >
               <v-img
-                :src="`https://picsum.photos/700?image=${n * 5 + 10}`"
+                :src="`/bridal/bridal-${('00' + n).slice(-3)}-crop.jpg`"
                 :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
                 aspect-ratio="1"
                 class="grey lighten-2 rounded-lg"
@@ -45,15 +45,15 @@ export default {
     return {
       heroAlt: [
         {
-          src: 'pexels-andrea-piacquadio-3830745.jpg',
-          heading: ' Gallery ',
+          src: '#',
+          heading: ' Bridal ',
         },
       ],
     }
   },
   head() {
     return {
-      title: 'Gallery',
+      title: 'Bridal',
       meta: [
         {
           hid: 'description',

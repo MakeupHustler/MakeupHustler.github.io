@@ -7,7 +7,6 @@
       height="30vh"
       :src="item.src"
       class="gradient-fill"
-      dark
     >
       <v-container fill-height>
         <v-row>
@@ -36,6 +35,7 @@ export default {
 </script>
 
 <style>
+/*
 .gradient-fill .v-responsive__content {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -44,4 +44,5 @@ export default {
     rgba(5, 11, 31, 0.7)
   );
 }
+*/
 </style>

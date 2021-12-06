@@ -121,7 +121,7 @@ export default {
     return {
       heroAlt: [
         {
-          src: 'pexels-andrea-piacquadio-3830745.jpg',
+          src: '#',
           heading: ' Contact Us ',
         },
       ],
